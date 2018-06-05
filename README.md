@@ -1,1 +1,18 @@
 # Super-Vector-Machine-Examples
+
+
+The Support Vector Machine, created by Vladimir Vapnik in the 60s, but pretty much overlooked until the 90s is still one of most popular machine learning classifiers.
+Support vector machine is a supervised machine learning algorithm which can be used for both classification or regression challenges,however it is mostly used in classification problems.The objective of the Support Vector Machine is to find the best splitting boundary between data. In two dimensional space, you can think of this like the best fit line that divides your dataset. With a Support Vector Machine, we're dealing in vector space, thus the separating line is actually a separating hyperplane. The best separating hyperplane is defined as the hyperplane that contains the "widest" margin between support vectors. The hyperplane may also be referred to as a decision boundary.
+
+The curiosity is how do we actually figure out that best dividing hyperplane? Well, we can eye-ball this.That's probably about right, but, how do we find that? Well, first you find the support vectors:Once you find the support vectors, you want to create lines that are maximally separated between each other. From here, we can easily find the decision boundary by taking the total width Dividing by 2 And you've got your boundary:
+
+for nonlinear classes in order to separate them by using SVM algorithm you need to add new feature that can show linearity between classes.But another burning question which arise is should we need to add this feature manually to have a hyper-plane.NO SVM has a technique called kernel.Kerneles are functions which takes low dimensional input space and transform it to a higher dimensional space (i.e it convert not separable problem into separable problem)
+
+### Pros of SVM:
+1.It works really well with clear margin of separation
+2.It is effective in high dimensional spaces
+3.It is effective in cases where numbers of dimensions is greater than the number of samples 
+
+### Cons of SVM:
+1.it does not perform well,when have large dataset because the required training time is higher 
+2.It also does not perform very well when the data set has more noise i.e target classes are overlapping
